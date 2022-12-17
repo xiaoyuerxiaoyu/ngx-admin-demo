@@ -1,0 +1,38 @@
+
+<nb-card>
+    <nb-card-header>nxg-print</nb-card-header>
+    <nb-card-body>
+        <div id="print-section">
+            <!--Your html stuff that you want to print-->
+            <p>demo1 works!</p>
+            <b>太字テキスト</b><br><br>
+            <i>斜体テキスト</i><br><br>
+            <code>コンピュータの自動出力</code><br><br>
+            これは <sub> 下付き文字</sub> と <sup> 上付き文字</sup>
+        </div>
+        <!-- <button
+            [printStyle]="{h1 : {'color': 'red'}, h2 : {'border': 'solid 1px'}}"
+            printSectionId="print-section"
+            ngxPrint>print</button> -->
+        
+        <button  
+            printTitle="MyTitle"  
+            printSectionId="print-section"  
+            ngxPrint>print</button>
+        
+        
+        
+        <!-- <button
+            [useExistingCss]="true"
+              printSectionId="print-section"
+              ngxPrint>print</button> -->  
+    </nb-card-body>  
+</nb-card>
+<nb-card>
+    <nb-card-header>Google Maps</nb-card-header>
+    <nb-card-body>
+      <google-map [center]="position" [zoom]="8" width="100%" height="36.5625rem">
+        <map-marker [position]="position"></map-marker>
+      </google-map>
+    </nb-card-body>
+</nb-card>
